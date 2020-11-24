@@ -7,7 +7,15 @@ namespace ConexaoSolidaria
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World");
+          Menu action = new Menu();
+          int userInput = 0;
+
+          action.ListInit();
+          
+          do
+          {
+            userInput = action.DisplayMenu();
+          }while(userInput!=5);
         }
     }
 }

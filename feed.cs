@@ -18,7 +18,7 @@ namespace ConexaoSolidaria
             if (dnt.adOpen == true)
             {
                 // precisa passar os parametros de inicializaçao da classe Donation
-                this.Donation.Add(new Donation());
+                // this.Donation.Add(new Donation());
             }
 
         }
