@@ -1,23 +1,26 @@
 using System;
 using System.Collections.Generic;
 
-abstract class Feed
+namespace ConexaoSolidaria
+{
+  abstract class Feed
 {
 
     private List<Donation> Donation = new List<Donation>();
 
     public List<Donation> getDonation()
     {
-        return this.DOnation;
+        return this.Donation;
     }
 
     public void addPublication(Donation dnt)
     {
-        if (dnt.adOpen = true)
+        if (dnt.adOpen == true)
         {
-            this.Donation.add(new Donation())
+            // precisa passar os parametros de inicializaçao da classe Donation
+            this.Donation.Add(new Donation());
         }
 
     }
-
+}
 }

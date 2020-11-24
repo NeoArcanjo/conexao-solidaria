@@ -15,12 +15,13 @@ namespace ConexaoSolidaria
             this.value = v;
         }
 
-        public string ad { get; set; };
-        public string adDescription { get; set; };
-        public bool adOpen { get; set; };
+        public string ad { get; set; }
+        public string adDescription { get; set; }
+        public bool adOpen { get; set; }
 
-        private double value { get; set; };
+        private double value { get; set; }
 
-        private Organization organization { get; set; };
+        private Organization organization { get; set; }
 
     }
+}
