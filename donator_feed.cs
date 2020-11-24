@@ -1,7 +1,10 @@
 using System;
 using System.Collections.Generic;
 
-class DonatorFeed{
+namespace ConexaoSolidaria
+{
+
+    public class DonatorFeed{
 
     private Feed fe
 }

@@ -1,0 +1,35 @@
+version: "3.7"
+services:
+  db:
+    image: mariadb:10.4
+    container_name: cs_db
+    ports:
+      - 3308:3306
+    environment:
+      - MYSQL_ROOT_PASSWORD=${PMA_PASSWORD}
+      - MYSQL_DATABASE=conexao_solidaria
+      - MYSQL_USER=${JDBC_USER}
+      - MYSQL_PASSWORD=${JDBC_PASSWD}
+    restart: always
+    volumes:
+      - db_data:/var/lib/mysql
+    networks:
+      - database
+
+
+  phpmyadmin:
+    image: phpmyadmin
+    container_name: cs_phpmyadmin
+    restart: always
+    environment:
+      - PMA_PASSWORD=${PMA_PASSWORD}
+    ports:
+      - 8000:80
+    networks:
+      - database
+
+volumes:
+  db_data:
+networks:
+  database:
+    driver: bridge

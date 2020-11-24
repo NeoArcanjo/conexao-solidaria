@@ -1,8 +1,13 @@
-using System; 
+using System;
 
-class Organization{
+namespace ConexaoSolidaria
+{
 
-  public string name;
-  public string organizationType;
-  public Address address = new Address();
+    public class Organization
+    {
+
+        public string name;
+        public string organizationType;
+        public Address address { get; set; }
+    }
 }
