@@ -10,18 +10,13 @@ namespace ConexaoSolidaria
           Menu action = new Menu();
           int userInput = 0;
 
-          action.ListInit();
+          // action.ListInit();
           
-          do
-          {
+          while(userInput!=5){
             userInput = action.DisplayMenu();
-          }while(userInput!=5);
+          };
         }
     }
 }
-
-
-
-
 
 // https://www.caelum.com.br/apostila-csharp-orientacao-objetos/encapsulamento-e-modificadores-de-acesso/#para-saber-mais-visibilidade-internal
